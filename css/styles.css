@@ -2,9 +2,11 @@ body{
     background-color: black;
     margin:0px;
     color:white;
-    font-family:'nunito';
     letter-spacing: -0.4px;
 
+}
+*{
+    font-family:'nunito';
 }
 ::selection{
     background-color: #8a1f51;
@@ -202,3 +204,6 @@ hr{
 .content-posts{
     width:200px;
 }
+
+
+
