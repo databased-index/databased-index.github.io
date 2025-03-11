@@ -5,6 +5,7 @@ permalink: /cpsslne
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/font.css">
+<link rel="stylesheet" type="text/css" href="css/posts.css">
 
 Vulnerability disclosed by [Checkpoint](https://blog.checkpoint.com/security/enhance-your-vpn-security-posture) on May 27th 2024. 
 
