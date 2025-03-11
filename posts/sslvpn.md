@@ -1,4 +1,5 @@
 <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 ---
 title: (CPSSLNE) CVE-2024-24919 - Databased Index
 permalink: /cpsslne
