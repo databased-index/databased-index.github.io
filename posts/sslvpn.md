@@ -1,7 +1,7 @@
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 ---
 title: (CPSSLNE) CVE-2024-24919 - Databased Index
 permalink: /cpsslne
-<link rel="stylesheet" type="text/css" href="css/styles.css">
 ---
 
 Vulnerability disclosed by [Checkpoint](https://blog.checkpoint.com/security/enhance-your-vpn-security-posture) on May 27th 2024. 
