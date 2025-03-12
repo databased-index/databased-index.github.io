@@ -111,7 +111,7 @@ Content-Type: text/xml; charset=UTF-8
 <params>
  <param>
   <value>
-   <string>WEBHOOK</string>
+   <string>WEBHOOK_UNIQUE_URL</string>
   </value>
  </param>
  <param>
@@ -129,13 +129,28 @@ What the attacker does is basically:
 
 > Replace the ```TARGET_URL``` with the url of the website.
 
-> Replace ```WEBHOOK``` with a webhook that will be used to catch the pingback response
+> Replace ```WEBHOOK_UNIQUE_URL``` with a webhook that will be used to catch the pingback response
 
 > Replace ```VALID_POST_FROM_TARGET``` with a post that's been made on the website
 
 > I.E: https://example.com/2025/03/10/is-a-nuclear-powered-marine-sector-a-possibility/
 
+|Resources|Status|Price|
+|---------|------|-----|
+|[webhook.site](https://webhook.site/)|✅UP|Free|
+
 #### <ins>Fingerprinting WAFs</ins>
+Fingerprinting a WAF can be done in some ways, but the main ones are by using automation tools or manually.
 
+Doing it manually requires you to analyze the behavior of the website to certain actions you take in it, such as trying to XSS an input field or uploading a malicious file. Also analyzing response headers and cookies for clues. 
 
-#### <ins>Protecting yourself</ins>
+Cloudflare can be easily spotted because of the custom 'cf-*' headers it sets.
+
+Automation tools:
+
+|Resources|Status|Price|
+|---------|------|-----|
+|[SuIP.biz](https://suip.biz/)|✅UP|Free|
+|[Wappalyzer](https://www.wappalyzer.com/)|✅UP (Add-On)|Free|
+|[Wafw00f](https://github.com/EnableSecurity/wafw00f)|✅UP|Free|
+|[Nikto](https://github.com/sullo/nikto)|✅UP|Free|
