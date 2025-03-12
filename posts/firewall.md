@@ -37,7 +37,7 @@ So,
 
 There are multiple ways to do that, and all of them are pretty easy, given the right conditions (which are usually the case).
 
-#### Subdomain Method
+#### <ins>Subdomain Method</ins>
 
 This is the easiest one since it doesn't even involve interacting directly with the target, but instead just enumerating all of the target's subdomains, along with their IP addresses. In most cases, the website will just have an unprotected IP that can be accessed directly with no real issue
 
@@ -51,6 +51,7 @@ This is the easiest one since it doesn't even involve interacting directly with 
 
 In some cases the server will be setup in such a way that even if the unprotected IP is accessed directly, it will still show different results from the target. In such occasions, it ___might___ mean that the IP is being shared with other hosts.
 In case of the IP being shared, the discrepancy in results can be easily circumvented by setting your Host request headers as the website's URL and not the IP itself.
+
 FOR THE SITUATION DESCRIBED ABOVE, instead of doing:
 ```
 POST /  HTTP 1.1
@@ -68,7 +69,7 @@ That way the IP can still be accessed directly if you search it up in your searc
 
 ___PS: The IP you search up in the searchbar has to be linked to the URL you set in the "Host" header for the contents to load, since that's how the server distinguishes what website is being requested from the shared IP___
 
-#### DNS Record Method
+#### <ins>DNS Record MethodM</ins>
 When looking for IPs and unprotected subdomains, it's also important to look for IPs or domains listed mainly in **MX** and **TXT** records.
 
 |Resources|Status|Price|
@@ -76,16 +77,16 @@ When looking for IPs and unprotected subdomains, it's also important to look for
 |[dnsdumpster.com](https://dnsdumpster.com/)|✅UP|Free|
 |[dig](https://command-not-found.com/dig)|COMMAND|Free|
 
-#### IP History Method
+#### <ins>IP History Method</ins>
 
 
-#### Forensics Search Method (shodan,censys)
+#### <ins>Forensics Search Method (shodan,censys)</ins>
 
 
-#### XMLRPC.php Method (Wordpress exclusive)
+#### <ins>XMLRPC.php Method (Wordpress exclusive)</ins>
 
 
-#### Fingerprinting WAFs
+#### <ins>Fingerprinting WAFs</ins>
 
 
-#### Protecting yourself
+#### <ins>Protecting yourself</ins>
