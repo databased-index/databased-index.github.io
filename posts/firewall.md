@@ -40,6 +40,7 @@ There are multiple ways to do that, and all of them are pretty easy, given the r
 #### Subdomain Method
 
 This is the easiest one since it doesn't even involve interacting directly with the target, but instead just enumerating all of the target's subdomains, along with their IP addresses. In most cases, the website will just have an unprotected IP that can be accessed directly with no real issue
+
 |Resources|Status|Price|
 |---------|------|-----|
 |[subdomainfinder.c99.nl](https://subdomainfinder.c99.nl/)|✅UP|Free|
