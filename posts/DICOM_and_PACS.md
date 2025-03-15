@@ -1,6 +1,6 @@
 ---
 title: DICOM/PACS Vulnerability Testing - Databased Index
-permalink: /med_DPe
+permalink: /med_DPVT
 ---
 
 <link rel="stylesheet" type="text/css" href="css/styles.css">
