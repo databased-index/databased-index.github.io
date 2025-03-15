@@ -7,8 +7,7 @@ permalink: /waf-bypassing
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/posts.css">
 
-#### ⚠️ THIS GUIDE IN NO WAY ENDORSES ILLEGAL ACTIVITIES AND I AM NOT LIABLE FOR WHAT YOU DO WITH THE INFORMATION YOU READ HERE.THIS IS BUT A MERE GUIDE FOR PENTESTERS AND PEOPLE INTERESTED ON HOW TO KEEP THEIR WEBSITE SAFE ⚠️
-
+## Type of vulnerability: Information Disclosure (CWE-200) 
 
 ### What is a firewall?
 Firewalls, or WAFs ___(Web Application Firewall)___, are filters and rules of access that serve as a sort of "gateway" to keep your website secure. Basically keeping your website safe from threats and potential vulnerabilities that could be easily exploited if you otherwise didn't have a WAF. 
@@ -154,3 +153,13 @@ Automation tools:
 |[Wappalyzer](https://www.wappalyzer.com/)|✅UP (Add-On)|Free|
 |[Wafw00f](https://github.com/EnableSecurity/wafw00f)|✅UP|Free|
 |[Nikto](https://github.com/sullo/nikto)|✅UP|Free|
+
+#### <ins>Mitigating Attacks</ins>
+To avoid getting your website's origin IP leaked, here are some steps you could take:
+
+- Make sure to tunnel all subdomains through your WAF.
+- Do not set your website's IP as an MX IP, instead use other mailing services as MX records cannot be proxied.
+- Make sure that if/when the Origin IP leaks, your code is secure enough to handle input tampering.
+- Setup your server in a way that forbids a client to connect directly do the IP, hitting the client with either a 403 status or a redirect to the main page.
+- Check if the Host header and the requested base URL match
+- Set the backend to only accept requests from the main website. This can be done via CORS.
