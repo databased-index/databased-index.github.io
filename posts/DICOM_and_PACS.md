@@ -1,5 +1,5 @@
 ---
-title: DICOM/PACS exploitation - Databased Index
+title: DICOM/PACS Vulnerability Testing - Databased Index
 permalink: /med_DPe
 ---
 
