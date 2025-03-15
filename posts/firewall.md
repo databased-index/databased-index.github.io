@@ -7,7 +7,7 @@ permalink: /waf-bypassing
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/posts.css">
 
-## Type of vulnerability: Information Disclosure (CWE-200) 
+### <ins>Type of vulnerability: Information Disclosure (CWE-200)</ins>
 
 ### What is a firewall?
 Firewalls, or WAFs ___(Web Application Firewall)___, are filters and rules of access that serve as a sort of "gateway" to keep your website secure. Basically keeping your website safe from threats and potential vulnerabilities that could be easily exploited if you otherwise didn't have a WAF. 
