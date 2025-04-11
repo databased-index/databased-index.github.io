@@ -163,3 +163,6 @@ To avoid getting your website's origin IP leaked, here are some steps you could 
 - Setup your server in a way that forbids a client to connect directly to the IP, hitting the client with either a 403 status or a redirect to the main page.
 - Check if the 'Host' header and the requested base URL match.
 - Set the backend to only accept requests from the main website. This can be done via CORS.
+
+### <ins>Read More</ins>
+[A guide to non-conventional WAF/IDS evasion techniques - By MLT](https://0x80dotblog.wordpress.com/2021/07/24/a-guide-to-non-conventional-waf-ids-evasion-techniques/)
