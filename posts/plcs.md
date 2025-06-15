@@ -1,5 +1,5 @@
 ---
-title: PLC attacks
+title: Understanding PLC attacks
 permalink: /plcs
 ---
 
