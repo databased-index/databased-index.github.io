@@ -6,6 +6,14 @@ permalink: /med_DPVT
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/posts.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="This post explains what DICOM and PACS are and how threat actors take advantage of it, as well as its consequences if not secured properly.">
+<meta property="og:title" content="DICOM/PACS Vulnerability Testing">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://databased-index.github.io/med_DPVT">
+<meta property="og:image" content="https://databased-index.github.io/images/cabbit.jpg">
+<meta property="og:description" content="This post explains what DICOM and PACS are and how threat actors take advantage of it, as well as its consequences if not secured properly.">
 
 ##### ⚠️The information in here should be used responsibly and tests carried with prior and propper authorization of the system masters⚠️
 
