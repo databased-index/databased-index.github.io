@@ -6,6 +6,14 @@ permalink: /waf-bypassing
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/posts.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="In this post, I'll explain what a firewall/WAF is, and how it can be bypassed by a threat actor.">
+<meta property="og:title" content="CWE-200 | Firewall Bypassing">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://databased-index.github.io/waf-bypassing">
+<meta property="og:image" content="https://databased-index.github.io/images/cabbit.jpg">
+<meta property="og:description" content="In this post, I'll explain what a firewall/WAF is, and how it can be bypassed by a threat actor.">
 
 #### <ins>Vuln Type: Information Disclosure (CWE-200)</ins>
 
