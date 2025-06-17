@@ -6,7 +6,15 @@ permalink: /plcs
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/font.css">
 <link rel="stylesheet" type="text/css" href="css/posts.css">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="In this post, we'll understand what is a PLC, what it does, what it uses and how threat actors take advantage of it.">
+<meta property="og:title" content="Understanding PLC attacks">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://databased-index.github.io/plcs">
+<meta property="og:image" content="https://databased-index.github.io/images/cabbit.jpg">
+ <meta property="og:description" content="In this post, we'll understand what is a PLC, what it does, what it uses and how threat actors take advantage of it.">
+ 
 ### What is a PLC?
 
 PLC, or Programmable Logic Controller, is basically a computer that has been manufactured specifically to be used in industrial environments, such as metallurgical companies, oil rigs and so on.
