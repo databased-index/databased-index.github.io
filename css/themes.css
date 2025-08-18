@@ -1,0 +1,41 @@
+
+.pine-opt{
+    color:var(--pine-color);
+    background-color: var(--pine-bg); 
+    border-bottom:var(--pine-presentation) solid var(--presentation-border);  
+}
+.pine-opt:hover{
+    color:white;
+    background-color: #233038; 
+}
+
+.magma-opt{
+    color:var(--magma-color);
+    background-color: var(--magma-bg); 
+    border-bottom:var(--magma-presentation) solid var(--presentation-border);  
+}
+.magma-opt:hover{
+    color:#ffd9d9;
+    background-color: #502323; 
+}
+
+
+.arctic-opt{
+    color:var(--arctic-color);
+    background-color: var(--arctic-bg); 
+    border-bottom:var(--arctic-presentation) solid var(--presentation-border);  
+}
+.arctic-opt:hover{
+    color:#dad9ff;
+    background-color: #4c71e0; 
+}
+
+.latte-opt{
+    color:var(--latte-color);
+    background-color: var(--latte-bg); 
+    border-bottom:var(--latte-presentation) solid var(--presentation-border);  
+}
+.latte-opt:hover{
+    color:#ffe4d9;
+    background-color: #d96b43; 
+}
