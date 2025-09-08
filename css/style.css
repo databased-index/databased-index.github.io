@@ -147,7 +147,7 @@
     display: flex;
     margin:auto;
     justify-content: space-between;
-    border-left: 1px solid var(--presentation);
+    border-right: 1px solid var(--presentation);
     border-bottom: 1px solid var(--presentation);
     border-top:none;
     padding:0px 5px
@@ -171,4 +171,20 @@
     color:var(--text-color);
     opacity: 50%;
 }
-
+.projects{
+    border-left: 1px solid var(--presentation);
+    border-bottom: 1px solid var(--presentation);
+    border-top:none;
+    max-width:100%;
+}
+.projects .posts-content{
+    padding-top:15px;
+    padding-bottom:5px;
+}
+.projects .content-title{
+    margin:0px 10px;
+}
+ul{
+     list-style-type: '↳ ';
+    color:var(--text-color);
+}
