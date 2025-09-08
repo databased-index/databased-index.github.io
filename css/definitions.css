@@ -18,6 +18,7 @@
     --pine-presentation:#233038;
     --pine-trans:white;
     --pine-trans:#a7bf7b7b;
+    --pine-placeholder:#a7bf7b79;
     
     --magma-title:#E35353;
     --magma-color:#E35353;
@@ -40,5 +41,6 @@
     --latte-trans:#ffe4d9;
     --latte-placeholder:#e9bd727b;
 }
+
 
 
