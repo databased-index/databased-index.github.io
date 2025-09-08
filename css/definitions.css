@@ -5,33 +5,38 @@
     --text-color:var(--magma-color);
     --background-color:var(--magma-bg);
     --presentation:var(--magma-presentation);
+    --placeholder:var(--magma-placeholder);
     --post-trans-color:white;
     --normal-text-size:15px;
     --blog-title-size:28px;
     --subtitle-size:20px;
-
+    
     /*THEMES DEFINITIONS*/
     --pine-title:#a7bf7b;
     --pine-color:#a7bf7b;
     --pine-bg:#1e282e;
     --pine-presentation:#233038;
     --pine-trans:white;
-
+    --pine-trans:#a7bf7b7b;
+    
     --magma-title:#E35353;
     --magma-color:#E35353;
     --magma-bg:#0f1018;
     --magma-presentation:#502323;
     --magma-trans:#ffd9d9;
+    --magma-placeholder:#e353536e;
     
     --arctic-title:#a7e6ff;
     --arctic-color:#204351;
     --arctic-bg:#d0d8ff;
     --arctic-presentation:#4265cd;
     --arctic-trans:#dad9ff;
-
+    --arctic-placeholder:#2043516e;
+        
     --latte-title:#ffe2af;
     --latte-color:#e9bd72;
     --latte-bg:#8a5c45;
     --latte-presentation:#d46c46;
     --latte-trans:#ffe4d9;
+    --latte-placeholder:#e9bd727b;
 }
