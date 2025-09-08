@@ -16,7 +16,7 @@ input::placeholder{
 }
 .gen{
     border:var(--presentation) 1px solid;  
-    color: var(--title-color);
+    color: var(--text-color);
     background: none;
     padding:5px 20px;
     transition: all 0.2s;
@@ -46,5 +46,6 @@ input::placeholder{
 .genInput{
     display:flex;
 }
+
 
 
