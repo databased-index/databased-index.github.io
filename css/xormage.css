@@ -1,0 +1,47 @@
+.img{
+    border:1px var(--presentation) solid;
+    border-top:none;
+    border-right:none;
+    padding:5px 5px;
+    max-width:100%;
+    margin: auto;
+}
+
+
+.img-gen{
+    display: block;
+    max-width: 100%;
+}
+.gen{
+    border:var(--presentation) 1px solid;  
+    color: var(--title-color);
+    background: none;
+    padding:5px 20px;
+    transition: all 0.2s;
+    border-top:none;    
+    
+}
+
+.geninputs{
+    width:100%;
+    outline: none;
+    background: none;
+    border:var(--presentation) 1px solid;  
+    color: var(--title-color);
+    border-top:none;
+    padding:5px 3px;
+}
+.gen:hover{
+    cursor:pointer;
+    background: var(--presentation);
+}
+.genNew{
+    border-right:none;
+}
+.genBtns{
+    display:flex;
+}
+.genInput{
+    display:flex;
+}
+
