@@ -7,13 +7,14 @@ function changeTheme(tgt){
     let SetBGColor = GetThemes.getPropertyValue(`--${tgt}-bg`);
     let SetPRESColor = GetThemes.getPropertyValue(`--${tgt}-presentation`);
     let SetTRANSColor = GetThemes.getPropertyValue(`--${tgt}-trans`);
-
+    let SetPlaceholderColor = GetThemes.getPropertyValue(`--${tgt}-placeholder`);
     
     document.documentElement.style.setProperty('--title-color',SetTITLEColor);
     document.documentElement.style.setProperty('--text-color',SetTXTColor);
     document.documentElement.style.setProperty('--background-color',SetBGColor);
     document.documentElement.style.setProperty('--presentation',SetPRESColor);
-    document.documentElement.style.setProperty('--post-trans-color',SetTRANSColor)
+    document.documentElement.style.setProperty('--post-trans-color',SetTRANSColor);
+    document.documentElement.style.setProperty('--placeholder',SetPlaceholderColor)
     document.cookie=`themePref=${tgt}`;
 }
 document.addEventListener('DOMContentLoaded',() => {
@@ -39,4 +40,5 @@ document.addEventListener('DOMContentLoaded',() => {
         changeTheme(targetTheme);
     })
 });
+
 
