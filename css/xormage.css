@@ -7,7 +7,9 @@
     margin: auto;
 }
 
-
+input::placeholder{
+    color:var(--placeholder);
+}
 .img-gen{
     display: block;
     max-width: 100%;
@@ -44,4 +46,5 @@
 .genInput{
     display:flex;
 }
+
 
