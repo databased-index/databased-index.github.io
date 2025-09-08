@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Databased [i]ndex</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="/css/definitions.css">
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet" href="/css/themes.css">
+        <link rel="stylesheet" href="/css/categories.css">
+        <link rel="stylesheet" href="/css/xormage.css">        
+        <script src="/js/img.js"></script>
+        <style>
+            body {
+                background-color: var(--background-color);
+                color: white;
+                font-family: monospace;
+                margin: 0;
+                font-kerning: normal;
+                letter-spacing: -0.7px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="nav-wrap">
+            <div class="nav-container">
+                <div class="nav">
+                    <div class="title-link-container">
+                        <a href="/" class="title-link">
+                            <div class="nav-quirk">
+                                <div class="nav-title">
+                                    <span class="title">>DB[IDX]</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <span class="themes">
+                        <div class="nav-quirk themes-container themes">
+                            <div class="nav-opts">
+                                Themes
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <div class="sub-nav-container">
+                <div class="sub-nav">
+                    <div class="theme-opt nav-quirk pine-opt" id="pine">
+                        Pines
+                    </div>
+                    <div class="theme-opt nav-quirk magma-opt" id="magma">
+                        Magma
+                    </div>
+                    <div class="theme-opt nav-quirk arctic-opt" id="arctic">
+                        Arctic
+                    </div>
+                    <div class="theme-opt nav-quirk latte-opt" id="latte">
+                        Latte
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-wrap">
+            <div class="main-container">
+                <div class="main">
+                    <div class="main-title">
+                        <span class="main-title-text">Xormage</span>
+                    </div>
+                    <div class="genContainer">
+                        <div class="genInput">
+                            <input class="geninputs gen1" placeholder="Width">
+                            <input class="geninputs gen2" placeholder="Height">
+                            
+                        </div>
+                        <div class="genInput">
+                            <input class="geninputs gen3" placeholder="Color range">
+                            <input class="geninputs gen4" placeholder="Filter range">
+                        </div>
+                        <div class="genInput">
+                            <input class="geninputs gen5" placeholder="Red">
+                            <input class="geninputs gen6" placeholder="Green">
+                            <input class="geninputs gen7" placeholder="Blue">
+                        </div>
+                        <div class="genBtns">
+                            <button class="gen genNew">Generate</button>
+                            <button class="gen genRand" onclick="GenDefinitions()">Generate Random</button>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <div class="img-container">
+                            <a href="" class="redir-img">
+                                <img class="img-gen">
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
