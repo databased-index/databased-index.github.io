@@ -7,7 +7,7 @@
     margin: auto;
 }
 input{
-    color:var(--text-color);
+    color:var(--title-color);
 }
 input::placeholder{
     color:var(--placeholder);
@@ -48,6 +48,7 @@ input::placeholder{
 .genInput{
     display:flex;
 }
+
 
 
 
