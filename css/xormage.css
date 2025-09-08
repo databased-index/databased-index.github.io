@@ -6,9 +6,7 @@
     max-width:100%;
     margin: auto;
 }
-input:focus{
-    background: var(--presentation);
-}
+
 input::placeholder{
     color:var(--placeholder);
 }
@@ -31,7 +29,7 @@ input::placeholder{
     outline: none;
     background: none;
     border:var(--presentation) 1px solid;  
-    color: var(--title-color);
+    color: var(--text-color);
     border-top:none;
     padding:5px 3px;
 }
@@ -48,6 +46,7 @@ input::placeholder{
 .genInput{
     display:flex;
 }
+
 
 
 
